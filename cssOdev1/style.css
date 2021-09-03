@@ -1,0 +1,130 @@
+/* General Settings - Starts */
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+/**
+
+ * Reset specific elements to make them easier to style in other contexts.
+ */
+
+ html,
+ body,
+ p,
+ ol,
+ ul,
+ li,
+ dl,
+ dt,
+ dd,
+ blockquote,
+ figure,
+ fieldset,
+ form,
+ legend,
+ textarea,
+ pre,
+ iframe,
+ hr,
+ h1,
+ h2,
+ h3,
+ h4,
+ h5,
+ h6 {
+     padding: 0;
+     margin: 0;
+     -moz-osx-font-smoothing: grayscale;
+     -webkit-font-smoothing: antialiased;
+ }
+ 
+ /**
+  * Apply generic border-box to all elements.
+  * See:
+  * https://css-tricks.com/inheriting-box-sizing-probably-slightly-better-best-practice/
+  */
+ 
+ html {
+ 
+     /* Apply border-box across the entire page. */
+     box-sizing: border-box;
+     font-family: var(--global--font-secondary);
+     line-height: var(--global--line-height-body);
+ }
+ body {
+     font-size: var(--global--font-size-base);
+     font-weight: normal;
+     color: var(--global--color-primary);
+     text-align: left;
+     background-color: var(--global--color-background);
+    height: 100vh;
+    font-family: 'Roboto', sans-serif;
+    }
+ 
+ 
+ button {
+     cursor: pointer;
+ }
+/* General Settings - End */
+/* Header - Starts */
+header{
+    background-color: honeydew;
+    text-align: center;
+    width: 100%;
+    min-height: 100px;
+}
+header > h1 {
+    padding-block: 1rem;
+    color: rgba(192, 192, 11, 0.548);
+}
+header > nav > ul{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.navItems {
+    margin-inline: 1.5rem;
+    padding-bottom: 1rem;
+}
+.navItems > a {
+    text-decoration: none;
+}
+/* Header - Ends */
+
+
+/* Section - Starts */
+section {
+    text-align: center;
+    padding:2rem 3rem;
+    min-height: calc(100vh - 270px);
+}
+section > h2{
+    padding-block: 1rem;
+}
+.anasayfa-listItems{
+    padding-top: 0.3rem;
+    list-style-position: inside;
+}
+#product-section img{
+    width: 300px;
+object-fit: contain;
+}
+#product-section figure{
+    margin-block: 1rem;
+}
+#product-section ol{
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+}
+/* Section - Ends */
+
+
+/* Footer - Starts */
+footer{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: honeydew;
+    width: 100%;
+    height: 100px;
+}
+/* Footer - Ends */
